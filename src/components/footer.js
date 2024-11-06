@@ -4,7 +4,6 @@ function Footer() {
   return (
     <div id="contact" className="section contact">
       <div className="footer-contact">
-        {/* Menu 1 */}
         <div className="menu">
           <ul>
             <li><a href="#about" className="pointer menu-item">About me</a></li>
@@ -14,7 +13,6 @@ function Footer() {
           </ul>
         </div>
         
-        {/* Menu 2 */}
         <div className="menu">
           <ul>
             <li>
@@ -52,14 +50,12 @@ function Footer() {
           </ul>
         </div>
         
-        {/* Menu 3 */}
         <div className="menu">
           <ul>
             <li><span className="menu-item">Belgrade, Serbia</span></li>
           </ul>
         </div>
         
-        {/* Menu 4 */}
         <div className="menu">
           <ul>
             <li><span className="menu-item">Dev. </span><a href="https://www.linkedin.com/in/tijana-igrutinovi%C4%87/" className="underline pointer menu-item">Tijana Igrutinovic</a></li>

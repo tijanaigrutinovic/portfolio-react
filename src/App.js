@@ -12,7 +12,7 @@ import './styles/main.scss';
 
 function App() {
   return (
-    <div className="body-section">  {/* Ovdje je div sa klasom */}
+    <div className="body-section">
       <CustomCursor />
       <Nav /> 
       <Hero /> 
