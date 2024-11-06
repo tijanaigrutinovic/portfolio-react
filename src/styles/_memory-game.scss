@@ -1,0 +1,176 @@
+.wrapper{ 
+    padding: 25px;
+    border-radius: 10px;
+    background: var(--memory-game-background);
+    width: 300px;
+    align-self: end;
+    @media screen and (max-width: 1000px) {
+      align-self: center;
+    }
+  }
+  .cards, .card, .view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards{
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  .cards .card{
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+  }
+  .card.shake{
+    animation: shake 0.35s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      transform: translateX(0);
+    }
+    20%{
+      transform: translateX(-13px);
+    }
+    40%{
+      transform: translateX(13px);
+    }
+    60%{
+      transform: translateX(-8px);
+    }
+    80%{
+      transform: translateX(8px);
+    }
+  }
+  .card .view{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+    background: #fff;
+    pointer-events: none;
+    backface-visibility: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s linear;
+  }
+  .card .front-view img{
+    width: 19px;
+  }
+  .card .back-view img{
+    max-width: 45px;
+  }
+  .card .back-view{
+    transform: rotateY(-180deg);
+  }
+  .card.flip .back-view{
+    transform: rotateY(0);
+  }
+  .card.flip .front-view{
+    transform: rotateY(180deg);
+  }
+  
+  @media screen and (max-width: 700px) {
+    .cards{
+      height: 350px;
+      width: 350px;
+    }
+    .card .front-view img{
+      width: 17px;
+    }
+    .card .back-view img{
+      max-width: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .cards{
+      height: 300px;
+      width: 300px;
+    }
+    .card .front-view img{
+      width: 15px;
+    }
+    .card .back-view img{
+      max-width: 35px;
+    }
+  }
+  
+  .message{
+    max-width: 350px;
+  }
+  
+  .resolve-game-copy{
+    color: var(--text-color);
+    font-family: GeistMono, monospace;
+    padding: 24px 0;
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    text-align: end;
+    max-width: 400px;
+    align-self: end;
+    @media screen and (max-width: 1000px) {
+        font-size: 14px;
+        padding: 16px 0;
+        max-width: 700px;
+        align-self: center;
+        text-align: center;
+    }
+  }
+  
+  .resolve-game-section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .resolve-game {
+    align-self: end;
+    position: relative;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 30px;
+    text-align: center;
+    color: var(--button-color);
+    background-color: var(--button-background);
+    font-family: GeistMono, monospace;
+    letter-spacing: 1px;
+    overflow: hidden; 
+    font-size: 18px;
+    padding: 8px 14px;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    @media screen and (max-width: 1000px) {
+      align-self: center;
+    }
+  }
+  
+  .resolve-game::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover-button-background);
+    transition: top 0.5s ease;
+    z-index: -1;
+    border-radius: 30px;
+  }
+  
+  .resolve-game:hover::before {
+    top: 0;
+  }
+  
+  .resolve-game:hover {
+    color: var(--text-color);
+  }
+  
