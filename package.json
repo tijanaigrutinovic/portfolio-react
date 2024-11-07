@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tijanaigrutinovic/portfolio-react",
+  "homepage": "https://tijanaigrutinovic.com",
   "dependencies": {
     "cra-template-cats": "1.1.4",
     "emailjs-com": "^3.2.0",
