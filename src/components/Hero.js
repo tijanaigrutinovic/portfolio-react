@@ -3,44 +3,44 @@ import React, { useState, useEffect, useRef } from 'react';
 const Hero = () => {
   const [text, setText] = useState('');
   const textToAnimate = 'Tijana Igrutinović';
-  
+
   const indexRef = useRef(0); 
   const isDeletingRef = useRef(false); 
   const timeoutRef = useRef(null); 
 
   useEffect(() => {
-    const speed = 100;
-    const pauseAfterTyping = 3000;
+    const speed = 100; 
+    const pauseAfterTyping = 3000; 
 
     const typeWriter = () => {
       if (!isDeletingRef.current) {
         if (indexRef.current < textToAnimate.length) {
           setText((prevText) => prevText + textToAnimate.charAt(indexRef.current));
           indexRef.current++;
-          timeoutRef.current = setTimeout(typeWriter, speed); 
+          timeoutRef.current = setTimeout(typeWriter, speed);
         } else {
           setTimeout(() => {
             isDeletingRef.current = true;
-            typeWriter(); 
+            typeWriter();
           }, pauseAfterTyping);
         }
       } else {
         if (indexRef.current > 0) {
           setText((prevText) => prevText.substring(0, indexRef.current - 1));
           indexRef.current--;
-          timeoutRef.current = setTimeout(typeWriter, speed); 
+          timeoutRef.current = setTimeout(typeWriter, speed);
         } else {
           isDeletingRef.current = false;
-          setTimeout(typeWriter, speed); 
+          setTimeout(typeWriter, speed);
         }
       }
     };
 
     typeWriter();
-    
+
     return () => {
       if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current); 
+        clearTimeout(timeoutRef.current);
       }
     };
   }, []);

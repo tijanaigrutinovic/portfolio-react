@@ -1,6 +1,7 @@
 import './App.css';
 import CustomCursor from './components/CustomCursor';
 import Nav from './components/Nav';
+import DarkLightMode from './components/DarkLightMode'
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects'
@@ -12,9 +13,11 @@ import './styles/main.scss';
 
 function App() {
   return (
+    <>
+    <Nav /> 
+    < DarkLightMode/>
     <div className="body-section">
       <CustomCursor />
-      <Nav /> 
       <Hero /> 
       <About /> 
       <Projects /> 
@@ -22,6 +25,7 @@ function App() {
       <Contact /> 
       <Footer /> 
     </div>
+    </>
   );
 }
 

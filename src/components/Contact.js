@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; 
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -18,20 +18,29 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_eylw2do', 'template_cn3c0xn', e.target, 'mtUZ3GM2_Mojd-7vU')
-      .then((result) => {
-        alert('Your message is sent! Thank you!');
-        setFormData({ name: '', email: '', message: '' }); 
-      }, (error) => {
-        alert('An error occurred: ' + error.text);
-      });
+    emailjs
+      .sendForm(
+        "service_eylw2do",
+        "template_cn3c0xn",
+        e.target,
+        "mtUZ3GM2_Mojd-7vU"
+      )
+      .then(
+        (result) => {
+          alert("Your message is sent! Thank you!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          alert("An error occurred: " + error.text);
+        }
+      );
   };
 
   return (
     <div className="experience section" id="contact">
       <div className="experience-left">
-        <h2>// Contact</h2>
-        <p style={{ marginBottom: '40px' }}>
+        <h2>{"// Contact"}</h2>
+        <p style={{ marginBottom: "40px" }}>
           Let's build something beautiful together!
         </p>
       </div>

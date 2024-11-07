@@ -99,7 +99,7 @@ function Skills() {
   return (
     <div className="skills section" id="skills">
       <div className="content">
-        <h2>// Skills</h2>
+      <h2>{'// Skills'}</h2>
         <p>
           Want to test your memory? Let's play a card game and see if we're a good fit!
           Turn over the cards to see my skills – each matching pair shows you the

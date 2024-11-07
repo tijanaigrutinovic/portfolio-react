@@ -129,6 +129,14 @@ nav{
 
     .nav-list.active {
         display: flex;
+        z-index: 1000;
+        position: absolute;
+        height: 100vh;
+        transform: translateX(0);
+        .nav-item{
+            margin: 10px 0;
+            padding: 8px 24px;
+        }
     }
 
     .hamburger {
@@ -136,55 +144,6 @@ nav{
         justify-content: center;
     }
 }
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    background-color: var(--background-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-}
-
-.close {
-    color: var(--nav-text-color);
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    fill: var(--text-color);
-    padding: 24px;
-}
-
-.modal-nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 80px;
-    text-align: center;
-}
-
-.modal-nav-list .nav-item {
-    margin: 10px 0;
-}
-
 
 .resume-button{
     margin: 0 20px;

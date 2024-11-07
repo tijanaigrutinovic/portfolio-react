@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const CustomCursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -10,11 +10,11 @@ const CustomCursor = () => {
         x: event.clientX,
         y: event.clientY,
       });
-      setIsVisible(true);  
+      setIsVisible(true);
     };
 
     const handleMouseLeave = () => {
-      setIsVisible(false);  
+      setIsVisible(false);
     };
 
     const handleMediaQuery = (e) => {
@@ -25,18 +25,18 @@ const CustomCursor = () => {
       }
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
-    const mediaQuery = window.matchMedia('(max-width: 600px)');
-    mediaQuery.addEventListener('change', handleMediaQuery);  
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    mediaQuery.addEventListener("change", handleMediaQuery);
 
     handleMediaQuery(mediaQuery);
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      mediaQuery.removeEventListener('change', handleMediaQuery);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      mediaQuery.removeEventListener("change", handleMediaQuery);
     };
   }, []);
 
@@ -44,9 +44,9 @@ const CustomCursor = () => {
     <div
       id="cursor"
       style={{
-        left: `${cursorPosition.x}px`, 
+        left: `${cursorPosition.x}px`,
         top: `${cursorPosition.y}px`,
-        opacity: isVisible ? '1' : '0', 
+        opacity: isVisible ? "1" : "0",
       }}
     ></div>
   );

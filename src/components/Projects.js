@@ -4,7 +4,7 @@ function Projects() {
     return (
       <div className="experience section" id="projects">
         <div className="experience-left">
-          <h2>// Work</h2>
+          <h2>{'// Work'}</h2>
           <p>
               Over the past three years, I’ve led and executed a range of exciting projects that 
               reflect my dedication to crafting high-quality, visually appealing web experiences. 
@@ -15,7 +15,7 @@ function Projects() {
         </div>
         <div className="experience-right">
           <div className="experience-cards">
-              <a href="https://concentrical.net/" target="_blank">
+              <a href="https://concentrical.net/" target="_blank" rel="noopener noreferrer">
                 <div className="ex-card">
                     <div className="content">
                       <h3>Concentrical website</h3>
@@ -28,7 +28,7 @@ function Projects() {
                     </div>
                 </div>
               </a>
-              <a href="https://staging-b2b.liaisonedu.com/" target="_blank">
+              <a href="https://staging-b2b.liaisonedu.com/" target="_blank" rel="noopener noreferrer">
                 <div className="ex-card">
                     <div className="content">
                       <h3>LiaisonEdu B2B</h3>
@@ -40,7 +40,7 @@ function Projects() {
                     </div>
                 </div>
               </a>
-              <a href="https://www.collegeconfidential.com/" target="_blank">
+              <a href="https://www.collegeconfidential.com/" target="_blank" rel="noopener noreferrer">
                 <div className="ex-card">
                     <div className="content">
                       <h3>College Confidential</h3>
