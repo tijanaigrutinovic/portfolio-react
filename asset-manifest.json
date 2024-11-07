@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tijanaigrutinovic/portfolio-react/static/css/main.22623f70.css",
-    "main.js": "/tijanaigrutinovic/portfolio-react/static/js/main.42c5a34c.js",
-    "static/media/tijana.JPG": "/tijanaigrutinovic/portfolio-react/static/media/tijana.a96d030f08decbad753c.JPG",
-    "static/media/img-6.png": "/tijanaigrutinovic/portfolio-react/static/media/img-6.0297da18dfaf59f0c201.png",
-    "static/media/img-4.png": "/tijanaigrutinovic/portfolio-react/static/media/img-4.c5da83bb9ff45b84e0e7.png",
-    "static/media/img-5.png": "/tijanaigrutinovic/portfolio-react/static/media/img-5.58d16c2a5ec58d719d09.png",
-    "static/media/img-1.png": "/tijanaigrutinovic/portfolio-react/static/media/img-1.97301e8b73c16a5d93c6.png",
-    "static/media/img-2.png": "/tijanaigrutinovic/portfolio-react/static/media/img-2.cfb2ba4a6b1c3de295bc.png",
-    "static/media/img-3.png": "/tijanaigrutinovic/portfolio-react/static/media/img-3.3dfb665e058d08c99f28.png",
-    "static/media/img-8.png": "/tijanaigrutinovic/portfolio-react/static/media/img-8.8f912e6eff277ae16489.png",
-    "index.html": "/tijanaigrutinovic/portfolio-react/index.html",
-    "static/media/que_icon.svg": "/tijanaigrutinovic/portfolio-react/static/media/que_icon.48bc655632ce334acd7b3df85f3f4f53.svg",
-    "main.22623f70.css.map": "/tijanaigrutinovic/portfolio-react/static/css/main.22623f70.css.map",
-    "main.42c5a34c.js.map": "/tijanaigrutinovic/portfolio-react/static/js/main.42c5a34c.js.map"
+    "main.css": "/portfolio-react/static/css/main.22623f70.css",
+    "main.js": "/portfolio-react/static/js/main.a24342ff.js",
+    "static/media/tijana.JPG": "/portfolio-react/static/media/tijana.a96d030f08decbad753c.JPG",
+    "static/media/img-6.png": "/portfolio-react/static/media/img-6.0297da18dfaf59f0c201.png",
+    "static/media/img-4.png": "/portfolio-react/static/media/img-4.c5da83bb9ff45b84e0e7.png",
+    "static/media/img-5.png": "/portfolio-react/static/media/img-5.58d16c2a5ec58d719d09.png",
+    "static/media/img-1.png": "/portfolio-react/static/media/img-1.97301e8b73c16a5d93c6.png",
+    "static/media/img-2.png": "/portfolio-react/static/media/img-2.cfb2ba4a6b1c3de295bc.png",
+    "static/media/img-3.png": "/portfolio-react/static/media/img-3.3dfb665e058d08c99f28.png",
+    "static/media/img-8.png": "/portfolio-react/static/media/img-8.8f912e6eff277ae16489.png",
+    "index.html": "/portfolio-react/index.html",
+    "static/media/que_icon.svg": "/portfolio-react/static/media/que_icon.48bc655632ce334acd7b3df85f3f4f53.svg",
+    "main.22623f70.css.map": "/portfolio-react/static/css/main.22623f70.css.map",
+    "main.a24342ff.js.map": "/portfolio-react/static/js/main.a24342ff.js.map"
   },
   "entrypoints": [
     "static/css/main.22623f70.css",
-    "static/js/main.42c5a34c.js"
+    "static/js/main.a24342ff.js"
   ]
 }
