@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import skill1 from '../images/img-1.png';
-import skill2 from '../images/img-2.png';
-import skill3 from '../images/img-3.png';
-import skill4 from '../images/img-4.png';
-import skill5 from '../images/img-5.png';
-import skill6 from '../images/img-6.png';
-import skill7 from '../images/img-7.png';
-import skill8 from '../images/img-8.png';
-import queIcon from '../images/que_icon.svg';
+import React, { useState, useEffect } from "react";
+import skill1 from "../images/img-1.png";
+import skill2 from "../images/img-2.png";
+import skill3 from "../images/img-3.png";
+import skill4 from "../images/img-4.png";
+import skill5 from "../images/img-5.png";
+import skill6 from "../images/img-6.png";
+import skill7 from "../images/img-7.png";
+import skill8 from "../images/img-8.png";
+import queIcon from "../images/que_icon.svg";
 
 const cardImages = [
   { id: 1, image: skill1 },
@@ -25,17 +25,14 @@ function Skills() {
   const [flippedCards, setFlippedCards] = useState([]);
   const [matched, setMatched] = useState(0);
   const [disableDeck, setDisableDeck] = useState(false);
-  const [firstMatch, setFirstMatch] = useState(false); 
-  
+  const [firstMatch, setFirstMatch] = useState(false);
+
   useEffect(() => {
     shuffleCards();
   }, []);
 
   const shuffleCards = () => {
-    const shuffledCards = [
-      ...cardImages,
-      ...cardImages, 
-    ]
+    const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
       .map((card, index) => ({
         ...card,
@@ -45,7 +42,7 @@ function Skills() {
 
     setCards(shuffledCards);
     setMatched(0);
-    setFirstMatch(false); 
+    setFirstMatch(false);
   };
 
   const flipCard = (index) => {
@@ -99,11 +96,11 @@ function Skills() {
   return (
     <div className="skills section" id="skills">
       <div className="content">
-      <h2>{'// Skills'}</h2>
+        <h2>{"// Skills"}</h2>
         <p>
-          Want to test your memory? Let's play a card game and see if we're a good fit!
-          Turn over the cards to see my skills – each matching pair shows you the
-          programming languages I use. Can you find them all?
+          Want to test your memory? Let's play a card game and see if we're a
+          good fit! Turn over the cards to see my skills – each matching pair
+          shows you the programming languages I use. Can you find them all?
         </p>
       </div>
       <div className="skills-game">
@@ -112,7 +109,7 @@ function Skills() {
             {cards.map((card, index) => (
               <li
                 key={index}
-                className={`card ${card.flipped ? 'flip' : ''}`}
+                className={`card ${card.flipped ? "flip" : ""}`}
                 onClick={() => flipCard(index)}
               >
                 <div className="view front-view">
@@ -128,15 +125,17 @@ function Skills() {
         <div className="resolve-game-section">
           {firstMatch && (
             <span className="resolve-game-copy">
-              Ready for a shortcut? Looks like you're making great progress! If you're feeling curious
-              (or just want a little help), click the button to reveal all my skills at once. But if
-              you're up for the challenge, keep going and see if you can match them all on your own!
+              Ready for a shortcut? Looks like you're making great progress! If
+              you're feeling curious (or just want a little help), click the
+              button to reveal all my skills at once. But if you're up for the
+              challenge, keep going and see if you can match them all on your
+              own!
             </span>
           )}
           <button
             className="resolve-game"
             onClick={resolveGame}
-            style={{ display: firstMatch ? 'block' : 'none' }}
+            style={{ display: firstMatch ? "block" : "none" }}
           >
             Resolve Game
           </button>
