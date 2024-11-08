@@ -99,7 +99,7 @@ function Nav() {
           </li>
           <li className="resume-button">
             <a
-              href="public/Tijana Igrutinovic CV.pdf"
+              href="cv/Tijana Igrutinovic CV.pdf"
               download="CV Tijana-Igrutinovic"
               onClick={closeMenu}
             >
