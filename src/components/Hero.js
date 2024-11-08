@@ -1,73 +1,57 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
-  const [text, setText] = useState("");
-  const textToAnimate = "Tijana Igrutinović";
+  const [text, setText] = useState(""); 
+  const textToAnimate = "Tijana Igrutinović"; 
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [looping, setLooping] = useState(true);
 
-  const indexRef = useRef(0);
-  const isDeletingRef = useRef(false);
-  const timeoutRef = useRef(null);
+  const speed = 100;
+  const deleteSpeed = 100;
+  const pauseAfterTyping = 3000;
 
   useEffect(() => {
-    const speed = 100;
-    const pauseAfterTyping = 3000;
-
     const typeWriter = () => {
-      if (!isDeletingRef.current) {
-        if (indexRef.current < textToAnimate.length) {
-          setText(
-            (prevText) => prevText + textToAnimate.charAt(indexRef.current)
-          );
-          indexRef.current++;
-          timeoutRef.current = setTimeout(typeWriter, speed);
+      if (!isDeleting) {
+        if (index < textToAnimate.length) {
+          setText((prevText) => prevText + textToAnimate.charAt(index));
+          setIndex((prevIndex) => prevIndex + 1);
         } else {
           setTimeout(() => {
-            isDeletingRef.current = true;
-            typeWriter();
+            setIsDeleting(true);
           }, pauseAfterTyping);
         }
       } else {
-        if (indexRef.current > 0) {
-          setText((prevText) => prevText.substring(0, indexRef.current - 1));
-          indexRef.current--;
-          timeoutRef.current = setTimeout(typeWriter, speed);
+        if (index > 0) {
+          setText((prevText) => prevText.substring(0, index - 1));
+          setIndex((prevIndex) => prevIndex - 1);
         } else {
-          isDeletingRef.current = false;
-          setTimeout(typeWriter, speed);
+          setIsDeleting(false);
         }
       }
     };
 
-    typeWriter();
-
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, []);
+    const interval = setInterval(typeWriter, isDeleting ? deleteSpeed : speed);
+    
+    return () => clearInterval(interval); 
+  }, [index, isDeleting]);
 
   return (
     <div className="hero-body">
       <div className="left-hero">
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
       </div>
       <div className="right-hero">
-        <h1 id="animatedText" className="title">
+        <motion.h1
+          className="title"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           {text}
-        </h1>
-        <p className="description">
-          Currently Working Remotely from 📍Belgrade
-        </p>
+        </motion.h1>
+        <p className="description">Currently Working Remotely from 📍Belgrade</p>
         <p className="subtitle">
           Three years of experience, I specialize in creating stunning frontend
           experiences for in-house teams and clients alike.
