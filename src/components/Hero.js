@@ -41,6 +41,16 @@ const Hero = () => {
   return (
     <div className="hero-body">
       <div className="left-hero">
+      <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
       </div>
       <div className="right-hero">
         <motion.h1
