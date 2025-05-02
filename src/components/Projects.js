@@ -16,6 +16,44 @@ function Projects() {
       </div>
       <div className="experience-right">
         <div className="experience-cards">
+        <a
+            href="https://github.com/tijanaigrutinovic/game-deals-dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="ex-card">
+              <div className="content">
+                <h3>Game Deals Dashboard</h3>
+                <p>
+                A full-stack web application that displays the best game deals from Steam, GOG, and Humble Store. 
+                The backend, built with Django, fetches data from the CheapShark API and exposes a RESTful API for the 
+                frontend. The React-based frontend, styled with Bootstrap, provides a responsive and intuitive interface. 
+                Registered users can filter and sort deals by store, price, savings, and rating, while each deal includes
+                 detailed information and a direct link to the store page.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://tiksimon.pythonanywhere.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="ex-card">
+              <div className="content">
+                <h3>York Tea Heaven</h3>
+                <p>
+                A custom-built website using Django and Wagtail CMS to provide a flexible content 
+                management experience for a fictional tea brand. The backend leverages Wagtail’s 
+                StreamField to create custom page layouts and reusable content blocks, allowing easy 
+                editing of product pages, blog sections, and promotional content. The frontend, 
+                crafted with SCSS and JavaScript, ensures a responsive, interactive design with 
+                smooth transitions and animations. This project highlights a clean integration of 
+                Django, Wagtail, and modern frontend technologies to create a dynamic, user-centric experience.
+                </p>
+              </div>
+            </div>
+          </a>
           <a
             href="https://concentrical.net/"
             target="_blank"

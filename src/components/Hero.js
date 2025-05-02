@@ -83,8 +83,9 @@ const Hero = () => {
           <span className="tehnologies">NodeJS</span>
           <span className="tehnologies">jQuery</span>
           <span className="tehnologies">SCSS</span>
-          <span className="tehnologies">DjangoCMS</span>
           <span className="tehnologies">Tailwind</span>
+          <span className="tehnologies">WagtailCMS</span>
+          <span className="tehnologies">Django</span>
         </div>
         <a className="contact-button" href="mailto:tijanaigrutinovic@gmail.com">
           <span>
