@@ -119,7 +119,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <span className="menu-item">Copyright 2024</span>
+              <span className="menu-item">Copyright 2025</span>
             </li>
           </ul>
         </div>

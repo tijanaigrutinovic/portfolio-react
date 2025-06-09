@@ -16,7 +16,24 @@ function Projects() {
       </div>
       <div className="experience-right">
         <div className="experience-cards">
-        <a
+          <a
+            href="https://crdf.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="ex-card">
+              <div className="content">
+                <h3>CRDF and ThreatCenter</h3>
+                <p>
+                Redesigned and modernized crdf.fr and threatcenter.crdf.fr to enhance UX and visual consistency. 
+                Migrated to the latest Bootstrap, implemented responsive design and light/dark theme. Simplified 
+                navigation while maintaining brand identity. Handled frontend development, UI/UX improvements, 
+                and worked closely with the client.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
             href="https://github.com/tijanaigrutinovic/game-deals-dashboard"
             target="_blank"
             rel="noopener noreferrer"

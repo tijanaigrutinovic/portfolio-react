@@ -81,9 +81,11 @@ const Hero = () => {
           <span className="tehnologies">JavaScript</span>
           <span className="tehnologies">ReactJS</span>
           <span className="tehnologies">NodeJS</span>
+          <span className="tehnologies">NextJS</span>
           <span className="tehnologies">jQuery</span>
           <span className="tehnologies">SCSS</span>
           <span className="tehnologies">Tailwind</span>
+          <span className="tehnologies">Bootstrap</span>
           <span className="tehnologies">WagtailCMS</span>
           <span className="tehnologies">Django</span>
         </div>
