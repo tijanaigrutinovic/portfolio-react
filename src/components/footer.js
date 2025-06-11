@@ -35,6 +35,8 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/tijana-igrutinovi%C4%87/"
                 className="pointer menu-item"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Linkedin
                 <svg
@@ -52,6 +54,8 @@ function Footer() {
               <a
                 href="https://github.com/tijanaigrutinovic"
                 className="pointer menu-item"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
                 <svg
@@ -66,8 +70,11 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://x.com/igtijana" className="pointer menu-item">
-                X Platform
+              <a href="https://www.upwork.com/freelancers/~011df57dbced404b62" 
+              className="pointer menu-item" 
+              target="_blank"
+              rel="noopener noreferrer">
+                Upwork
                 <svg
                   className="arrow-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +90,8 @@ function Footer() {
               <a
                 href="mailto:tijana.igrutinovic@com"
                 className="pointer menu-item"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Let's connect!
                 <svg
