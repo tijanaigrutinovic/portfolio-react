@@ -17,7 +17,29 @@ function Projects() {
       <div className="experience-right">
         <div className="experience-cards">
           <a
-            href="https://crdf.fr/"
+            href="https://linkstackz.com/become-creator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="ex-card">
+              <div className="content">
+                <h3>Linkstackz</h3>
+                <p>
+                Developed a fully custom, animation-rich landing page using React, Tailwind CSS, and CSS, faithfully implementing the provided design without any UI libraries.
+                <br></br>
+                <br></br>
+                ✨Built entirely from scratch using only core tools—no UI frameworks or prebuilt components.
+                <br></br>
+                <br></br>
+                ✨Developed every component from scratch, ensuring pixel-perfect responsiveness and seamless transitions across all devices — no UI libraries used.
+                <br></br>
+                <br></br>
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://leadplay.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
