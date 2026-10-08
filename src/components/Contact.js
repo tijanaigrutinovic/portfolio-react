@@ -41,7 +41,8 @@ function Contact() {
       <div className="experience-left">
         <h2>{"// Contact"}</h2>
         <p style={{ marginBottom: "40px" }}>
-          Let's build something beautiful together!
+          Have a project or a role in mind? I'm available for full-time,
+          freelance and contract frontend work.
         </p>
       </div>
       <div className="experience-right">
@@ -83,7 +84,7 @@ function Contact() {
           </div>
           <button type="submit" className="contact-button">
             <span>
-              Send <i className="fa-regular fa-paper-plane"></i>
+              Get in touch <i className="fa-regular fa-paper-plane"></i>
             </span>
           </button>
         </form>

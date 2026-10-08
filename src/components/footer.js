@@ -2,23 +2,18 @@ import React from "react";
 
 function Footer() {
   return (
-    <div id="contact" className="section contact">
+    <div className="section contact">
       <div className="footer-contact">
         <div className="menu">
           <ul>
             <li>
-              <a href="#about" className="pointer menu-item">
-                About me
-              </a>
-            </li>
-            <li>
               <a href="#projects" className="pointer menu-item">
-                Projects
+                Work
               </a>
             </li>
             <li>
-              <a href="#skills" className="pointer menu-item">
-                Skills
+              <a href="#about" className="pointer menu-item">
+                About
               </a>
             </li>
             <li>
@@ -88,12 +83,12 @@ function Footer() {
             </li>
             <li>
               <a
-                href="mailto:tijana.igrutinovic@com"
+                href="mailto:tijana.igrutinovic@gmail.com"
                 className="pointer menu-item"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Let's connect!
+                Email
                 <svg
                   className="arrow-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +106,7 @@ function Footer() {
         <div className="menu">
           <ul>
             <li>
-              <span className="menu-item">Belgrade, Serbia</span>
+              <span className="menu-item">Remote · Europe</span>
             </li>
           </ul>
         </div>
@@ -119,16 +114,7 @@ function Footer() {
         <div className="menu">
           <ul>
             <li>
-              <span className="menu-item">Dev. </span>
-              <a
-                href="https://www.linkedin.com/in/tijana-igrutinovi%C4%87/"
-                className="underline pointer menu-item"
-              >
-                Tijana Igrutinovic
-              </a>
-            </li>
-            <li>
-              <span className="menu-item">Copyright 2025</span>
+              <span className="menu-item">© 2026 Tijana Igrutinovic</span>
             </li>
           </ul>
         </div>

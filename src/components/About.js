@@ -3,21 +3,22 @@ import tijanaImage from "../images/tijana.JPG";
 
 const About = () => {
   return (
-    <div className="about section" id="about">
+    <section className="about section" id="about">
       <div className="about-content">
-        <h2>{"// About me"}</h2>
+        <h2>{"// A little about me"}</h2>
         <p>
-          I'm an enthusiastic frontend developer living in Belgrade
-          concentrating on the front-end side of the web.
+          Geology came before frontend. The problems were complicated, and the
+          information was rarely complete, so the way through was to look from
+          another angle and stay with it until it made sense. An interface that
+          almost works asks for the same thing: the structure first, then the
+          part that still doesn't behave.
         </p>
         <p>
-          I've been working on web development for about three years, focusing
-          on the front end. I love collaborating with designers because they
-          help me find creativity when form and function come together. When I'm
-          not coding, I use my artistic side to create handcrafted jewelry. My
-          experience as a rock climber has taught me the resolve and precision
-          necessary to overcome challenges and produce polished work. I see each
-          project as a chance to bring ideas to life with care and precision.
+          Long-distance running came later. A marathon doesn't happen in one
+          push. You build a base, something breaks, you fix it, and the distance
+          moves out. A design becomes a working interface in those same passes.
+          A live product grows one piece at a time, without losing the structure
+          underneath.
         </p>
       </div>
       <div className="about-image">
@@ -27,7 +28,7 @@ const About = () => {
           alt="Tijana Igrutinović"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
